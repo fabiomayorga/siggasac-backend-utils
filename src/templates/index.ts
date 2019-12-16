@@ -1,0 +1,1 @@
+export { recoveryPasswordTemplate } from './recoverPassword';
