@@ -14,6 +14,7 @@ export const MAIN: Configuration = {
     subRoutes: {
         accountsTypes: 'accounts-types',
         banks: 'banks',
+        budgets: 'budgets',
         budgetAccounts: 'budget-accounts',
         campus: 'campus',
         countries: 'countries',
