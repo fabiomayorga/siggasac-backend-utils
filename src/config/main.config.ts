@@ -16,6 +16,7 @@ export const MAIN: Configuration = {
         banks: 'banks',
         budgets: 'budgets',
         budgetAccounts: 'budget-accounts',
+        budgetNotes: 'budget-notes',
         campus: 'campus',
         countries: 'countries',
         login: 'login',
