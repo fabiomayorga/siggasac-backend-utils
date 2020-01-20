@@ -22,7 +22,7 @@ export class HttpExceptionFilter implements ExceptionFilter {
             message,
             info,
             timestamp: new Date().toISOString(),
-            path: request.url,
+            path: request.url
             // stackErrors
         });
     }

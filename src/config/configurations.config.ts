@@ -14,6 +14,6 @@ export const CONFIGURATION: Configuration = {
     subRoutes: {
         menus: 'menus',
         permissions: 'permissions',
-        profiles: 'profiles',
+        profiles: 'profiles'
     }
 };
