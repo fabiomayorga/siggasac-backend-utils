@@ -19,7 +19,7 @@ export class DatesHelper {
 
     /**
      * Obtiene la diferencia en horas entre date2 y date1.
-     * 
+     *
      * @param date1 fecha 1
      * @param date2 fecha 2
      */
