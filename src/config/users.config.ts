@@ -13,6 +13,6 @@ export const USERS: Configuration = {
     apiBasePath: `${name}/${version}`,
     subRoutes: {
         main: 'main',
-        recoverPassword: 'revocer-password'
+        passwords: 'passwords'
     }
 };
