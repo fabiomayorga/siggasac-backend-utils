@@ -1,7 +1,7 @@
 export class EmailParametersDTO {
-    to: string;
+    from?: string;
 
-    from: string;
+    to: string;
 
     subject?: string;
 

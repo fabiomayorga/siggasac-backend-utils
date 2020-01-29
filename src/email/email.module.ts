@@ -12,7 +12,7 @@ import { EmailService } from './email.service';
                 secure: false,
                 auth: {
                     user: 'AKIAIAPGK57JXNG2CKHA',
-                    pass: 'AsIeeUsfKcyRmOuhodH4K2YSjuMrV0zzMVdrrRsmOoVm'
+                    pass: 'mgylklqaymubprod'
                 },
                 tls: {
                     rejectUnauthorized: false

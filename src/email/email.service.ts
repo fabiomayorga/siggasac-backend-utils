@@ -6,10 +6,9 @@ import { EmailParametersDTO } from './dto/email-parameters.dto';
 export class EmailService {
     constructor(private readonly mailerService: MailerService) {}
 
-    async sendEmail(emailParametersDTO: EmailParametersDTO): Promise<any> {
+    async sendEmail(parameters: EmailParametersDTO): Promise<any> {
         try {
-            this.mailerService.sendMail(emailParametersDTO);
-            return 1;
+            return await this.mailerService.sendMail(parameters);
         } catch (error) {
             throw error;
         }
