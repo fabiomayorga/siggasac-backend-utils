@@ -1,50 +1,53 @@
 import Axios, { AxiosResponse } from 'axios';
-import { v4, v6 } from 'public-ip';
+const axios = require('axios');
+import { Logger } from '@nestjs/common';
 
 export class SigasacRequest {
     static async get(
-        uri: string,
+        host: string,
         _module: string,
         version: string,
+        uri: string,
         token?: string,
         params?: any
     ): Promise<AxiosResponse> {
         try {
-            const ip = await v4();
-
-            return await Axios.get(`${ip}/${_module}/${version}/${uri}`, {
-                headers: {
-                    Authorization: `Bearer ${token}`
-                },
-                params
-            });
+            return await Axios.get(
+                `http://${host}/${_module}/${version}/${uri}`,
+                {
+                    headers: {
+                        Authorization: token
+                    },
+                    params
+                }
+            );
         } catch (error) {
             throw error;
         }
     }
 
     static async post(
-        uri: string,
+        host: string,
         _module: string,
         version: string,
+        uri: string,
         token?: string,
         body?: any,
         params?: any
     ): Promise<AxiosResponse> {
         try {
-            const ip = await v4();
-
             return await Axios.post(
-                `${ip}/${_module}/${version}/${uri}`,
+                `http://${host}/${_module}/${version}/${uri}`,
                 body,
                 {
                     headers: {
-                        Authorization: `Bearer ${token}`
+                        Authorization: token
                     },
                     params
                 }
             );
         } catch (error) {
+            Logger.error(error);
             throw error;
         }
     }
