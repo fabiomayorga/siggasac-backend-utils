@@ -17,7 +17,7 @@ export class DatesHelper {
             .toString();
     }
 
-    static addMonthToMonth(date: Date | string, amount: number = 1) {
+    static addMonthToDate(date: Date | string, amount: number = 1) {
         return moment(date)
             .add(amount, 'months')
             .format('YYYY-MM-DD HH:mm:ss')
