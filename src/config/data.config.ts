@@ -13,6 +13,7 @@ export const DATA: Configuration = {
     apiBasePath: `${name}/${version}`,
     subRoutes: {
         months: 'months',
-        states: 'states'
+        states: 'states',
+        requests: 'requests'
     }
 };
